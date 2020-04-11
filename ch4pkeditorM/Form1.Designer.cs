@@ -86,20 +86,125 @@
             this.label16 = new System.Windows.Forms.Label();
             this.generalCavalryTxt = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.generalFullBtn = new System.Windows.Forms.Button();
+            this.generalNormalFullBtn = new System.Windows.Forms.Button();
+            this.generalInternalAffairsFullBtn = new System.Windows.Forms.Button();
+            this.generalBattleFullBtn = new System.Windows.Forms.Button();
+            this.generalArmsFullBtn = new System.Windows.Forms.Button();
             this.generalMovedRadioBtn = new System.Windows.Forms.RadioButton();
             this.generalMoveYetRadioBtn = new System.Windows.Forms.RadioButton();
+            this.cityListBox = new System.Windows.Forms.ListBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.cityNameLabel = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cityScaleTxt = new System.Windows.Forms.TextBox();
+            this.cityDefenceTxt = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.cityFoodTxt = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.cityMoneyTxt = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.cityArmyTxt = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cityHusbandryTxt = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.cityFarmTxt = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cityTacticsTxt = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.cityWeaponTxt = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.cityBuildingTxt = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.citySailingTxt = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.cityArtTxt = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.cityAcademicTxt = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.cityCraftTxt = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.cityMedicalTxt = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.cityOliveOilTxt = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.cityWineTxt = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.cityTeaTxt = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.citySugarTxt = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.cityCamelTxt = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.cityElephantTxt = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.cityHorseTxt = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.citySeasoningTxt = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.cityWoolTxt = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.citySilkFabricTxt = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.cityFurTxt = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.citySaltTxt = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.citySilverwareTxt = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.cityPotteryTxt = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.cityCeladonTxt = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.cityCottonFabricTxt = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.cityGoldTxt = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.citySilverTxt = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.cityCopperTxt = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.cityGlasswareTxt = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.cityAmberTxt = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.cityTurtleShellTxt = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.cityDrawTxt = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.citySpicesTxt = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.cityIvoryTxt = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.cityPearlTxt = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.cityEmeraldTxt = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.cityCoralTxt = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.cityIronTxt = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
+            this.cityChineseMedicineTxt = new System.Windows.Forms.TextBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.cityWoodTxt = new System.Windows.Forms.TextBox();
+            this.label65 = new System.Windows.Forms.Label();
+            this.cityNormalFullBtn = new System.Windows.Forms.Button();
+            this.cityCultureFullBtn = new System.Windows.Forms.Button();
+            this.cityStapleFullBtn = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.generalTab.SuspendLayout();
+            this.cityTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -117,11 +222,11 @@
             // 
             this.generalTab.Controls.Add(this.generalMoveYetRadioBtn);
             this.generalTab.Controls.Add(this.generalMovedRadioBtn);
-            this.generalTab.Controls.Add(this.button5);
-            this.generalTab.Controls.Add(this.button4);
-            this.generalTab.Controls.Add(this.button3);
-            this.generalTab.Controls.Add(this.button2);
-            this.generalTab.Controls.Add(this.button1);
+            this.generalTab.Controls.Add(this.generalArmsFullBtn);
+            this.generalTab.Controls.Add(this.generalBattleFullBtn);
+            this.generalTab.Controls.Add(this.generalInternalAffairsFullBtn);
+            this.generalTab.Controls.Add(this.generalNormalFullBtn);
+            this.generalTab.Controls.Add(this.generalFullBtn);
             this.generalTab.Controls.Add(this.groupBox5);
             this.generalTab.Controls.Add(this.groupBox4);
             this.generalTab.Controls.Add(this.groupBox3);
@@ -145,6 +250,15 @@
             // 
             // cityTab
             // 
+            this.cityTab.Controls.Add(this.cityStapleFullBtn);
+            this.cityTab.Controls.Add(this.cityCultureFullBtn);
+            this.cityTab.Controls.Add(this.cityNormalFullBtn);
+            this.cityTab.Controls.Add(this.groupBox8);
+            this.cityTab.Controls.Add(this.groupBox7);
+            this.cityTab.Controls.Add(this.groupBox6);
+            this.cityTab.Controls.Add(this.cityNameLabel);
+            this.cityTab.Controls.Add(this.label18);
+            this.cityTab.Controls.Add(this.cityListBox);
             this.cityTab.Location = new System.Drawing.Point(4, 22);
             this.cityTab.Name = "cityTab";
             this.cityTab.Padding = new System.Windows.Forms.Padding(3);
@@ -660,56 +774,56 @@
             this.label17.TabIndex = 18;
             this.label17.Text = "騎兵";
             // 
-            // button1
+            // generalFullBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(305, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(43, 43);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "能力全滿";
-            this.button1.UseVisualStyleBackColor = false;
+            this.generalFullBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.generalFullBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generalFullBtn.Location = new System.Drawing.Point(305, 7);
+            this.generalFullBtn.Name = "generalFullBtn";
+            this.generalFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalFullBtn.TabIndex = 14;
+            this.generalFullBtn.Text = "能力全滿";
+            this.generalFullBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // generalNormalFullBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.AntiqueWhite;
-            this.button2.Location = new System.Drawing.Point(354, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(43, 43);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "一般全滿";
-            this.button2.UseVisualStyleBackColor = false;
+            this.generalNormalFullBtn.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.generalNormalFullBtn.Location = new System.Drawing.Point(365, 7);
+            this.generalNormalFullBtn.Name = "generalNormalFullBtn";
+            this.generalNormalFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalNormalFullBtn.TabIndex = 15;
+            this.generalNormalFullBtn.Text = "一般全滿";
+            this.generalNormalFullBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // generalInternalAffairsFullBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.Honeydew;
-            this.button3.Location = new System.Drawing.Point(396, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(43, 43);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "內政全滿";
-            this.button3.UseVisualStyleBackColor = false;
+            this.generalInternalAffairsFullBtn.BackColor = System.Drawing.Color.Honeydew;
+            this.generalInternalAffairsFullBtn.Location = new System.Drawing.Point(407, 7);
+            this.generalInternalAffairsFullBtn.Name = "generalInternalAffairsFullBtn";
+            this.generalInternalAffairsFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalInternalAffairsFullBtn.TabIndex = 16;
+            this.generalInternalAffairsFullBtn.Text = "內政全滿";
+            this.generalInternalAffairsFullBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // generalBattleFullBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.Azure;
-            this.button4.Location = new System.Drawing.Point(438, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(43, 43);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "戰鬥全滿";
-            this.button4.UseVisualStyleBackColor = false;
+            this.generalBattleFullBtn.BackColor = System.Drawing.Color.Azure;
+            this.generalBattleFullBtn.Location = new System.Drawing.Point(449, 7);
+            this.generalBattleFullBtn.Name = "generalBattleFullBtn";
+            this.generalBattleFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalBattleFullBtn.TabIndex = 17;
+            this.generalBattleFullBtn.Text = "戰鬥全滿";
+            this.generalBattleFullBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // generalArmsFullBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button5.Location = new System.Drawing.Point(480, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(43, 43);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "兵種全滿";
-            this.button5.UseVisualStyleBackColor = false;
+            this.generalArmsFullBtn.BackColor = System.Drawing.Color.LavenderBlush;
+            this.generalArmsFullBtn.Location = new System.Drawing.Point(491, 7);
+            this.generalArmsFullBtn.Name = "generalArmsFullBtn";
+            this.generalArmsFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalArmsFullBtn.TabIndex = 18;
+            this.generalArmsFullBtn.Text = "兵種全滿";
+            this.generalArmsFullBtn.UseVisualStyleBackColor = false;
             // 
             // generalMovedRadioBtn
             // 
@@ -733,6 +847,919 @@
             this.generalMoveYetRadioBtn.Text = "未行動";
             this.generalMoveYetRadioBtn.UseVisualStyleBackColor = true;
             // 
+            // cityListBox
+            // 
+            this.cityListBox.FormattingEnabled = true;
+            this.cityListBox.Location = new System.Drawing.Point(7, 6);
+            this.cityListBox.Name = "cityListBox";
+            this.cityListBox.Size = new System.Drawing.Size(100, 316);
+            this.cityListBox.TabIndex = 0;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(113, 23);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(34, 13);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "城市:";
+            // 
+            // cityNameLabel
+            // 
+            this.cityNameLabel.AutoSize = true;
+            this.cityNameLabel.Location = new System.Drawing.Point(153, 23);
+            this.cityNameLabel.Name = "cityNameLabel";
+            this.cityNameLabel.Size = new System.Drawing.Size(0, 13);
+            this.cityNameLabel.TabIndex = 2;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.groupBox6.Controls.Add(this.cityArmyTxt);
+            this.groupBox6.Controls.Add(this.label24);
+            this.groupBox6.Controls.Add(this.cityFoodTxt);
+            this.groupBox6.Controls.Add(this.label21);
+            this.groupBox6.Controls.Add(this.cityMoneyTxt);
+            this.groupBox6.Controls.Add(this.label22);
+            this.groupBox6.Controls.Add(this.cityDefenceTxt);
+            this.groupBox6.Controls.Add(this.label20);
+            this.groupBox6.Controls.Add(this.cityScaleTxt);
+            this.groupBox6.Controls.Add(this.label19);
+            this.groupBox6.Location = new System.Drawing.Point(116, 58);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(145, 94);
+            this.groupBox6.TabIndex = 3;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "一般屬性";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(78, 44);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(31, 13);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "規模";
+            // 
+            // cityScaleTxt
+            // 
+            this.cityScaleTxt.Location = new System.Drawing.Point(109, 41);
+            this.cityScaleTxt.Name = "cityScaleTxt";
+            this.cityScaleTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityScaleTxt.TabIndex = 1;
+            // 
+            // cityDefenceTxt
+            // 
+            this.cityDefenceTxt.Location = new System.Drawing.Point(109, 17);
+            this.cityDefenceTxt.Name = "cityDefenceTxt";
+            this.cityDefenceTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityDefenceTxt.TabIndex = 3;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(78, 20);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(31, 13);
+            this.label20.TabIndex = 2;
+            this.label20.Text = "防禦";
+            // 
+            // cityFoodTxt
+            // 
+            this.cityFoodTxt.Location = new System.Drawing.Point(40, 41);
+            this.cityFoodTxt.Name = "cityFoodTxt";
+            this.cityFoodTxt.Size = new System.Drawing.Size(36, 20);
+            this.cityFoodTxt.TabIndex = 7;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(7, 44);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(31, 13);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "糧食";
+            // 
+            // cityMoneyTxt
+            // 
+            this.cityMoneyTxt.Location = new System.Drawing.Point(40, 17);
+            this.cityMoneyTxt.Name = "cityMoneyTxt";
+            this.cityMoneyTxt.Size = new System.Drawing.Size(36, 20);
+            this.cityMoneyTxt.TabIndex = 5;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(7, 20);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(31, 13);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "金錢";
+            // 
+            // cityArmyTxt
+            // 
+            this.cityArmyTxt.Location = new System.Drawing.Point(40, 65);
+            this.cityArmyTxt.Name = "cityArmyTxt";
+            this.cityArmyTxt.Size = new System.Drawing.Size(36, 20);
+            this.cityArmyTxt.TabIndex = 9;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(7, 68);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(31, 13);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "兵士";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.Honeydew;
+            this.groupBox7.Controls.Add(this.cityCraftTxt);
+            this.groupBox7.Controls.Add(this.label32);
+            this.groupBox7.Controls.Add(this.cityMedicalTxt);
+            this.groupBox7.Controls.Add(this.label33);
+            this.groupBox7.Controls.Add(this.cityArtTxt);
+            this.groupBox7.Controls.Add(this.label30);
+            this.groupBox7.Controls.Add(this.cityAcademicTxt);
+            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.cityBuildingTxt);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.citySailingTxt);
+            this.groupBox7.Controls.Add(this.label29);
+            this.groupBox7.Controls.Add(this.cityTacticsTxt);
+            this.groupBox7.Controls.Add(this.label26);
+            this.groupBox7.Controls.Add(this.cityWeaponTxt);
+            this.groupBox7.Controls.Add(this.label27);
+            this.groupBox7.Controls.Add(this.cityHusbandryTxt);
+            this.groupBox7.Controls.Add(this.label23);
+            this.groupBox7.Controls.Add(this.cityFarmTxt);
+            this.groupBox7.Controls.Add(this.label25);
+            this.groupBox7.Location = new System.Drawing.Point(115, 167);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(145, 152);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "文化";
+            // 
+            // cityHusbandryTxt
+            // 
+            this.cityHusbandryTxt.Location = new System.Drawing.Point(109, 16);
+            this.cityHusbandryTxt.Name = "cityHusbandryTxt";
+            this.cityHusbandryTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityHusbandryTxt.TabIndex = 7;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(78, 19);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(31, 13);
+            this.label23.TabIndex = 6;
+            this.label23.Text = "畜牧";
+            // 
+            // cityFarmTxt
+            // 
+            this.cityFarmTxt.Location = new System.Drawing.Point(40, 16);
+            this.cityFarmTxt.Name = "cityFarmTxt";
+            this.cityFarmTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityFarmTxt.TabIndex = 5;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(7, 19);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(31, 13);
+            this.label25.TabIndex = 4;
+            this.label25.Text = "農耕";
+            // 
+            // cityTacticsTxt
+            // 
+            this.cityTacticsTxt.Location = new System.Drawing.Point(109, 42);
+            this.cityTacticsTxt.Name = "cityTacticsTxt";
+            this.cityTacticsTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityTacticsTxt.TabIndex = 11;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(78, 45);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(31, 13);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "戰術";
+            // 
+            // cityWeaponTxt
+            // 
+            this.cityWeaponTxt.Location = new System.Drawing.Point(40, 42);
+            this.cityWeaponTxt.Name = "cityWeaponTxt";
+            this.cityWeaponTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityWeaponTxt.TabIndex = 9;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(7, 45);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(31, 13);
+            this.label27.TabIndex = 8;
+            this.label27.Text = "武器";
+            // 
+            // cityBuildingTxt
+            // 
+            this.cityBuildingTxt.Location = new System.Drawing.Point(109, 68);
+            this.cityBuildingTxt.Name = "cityBuildingTxt";
+            this.cityBuildingTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityBuildingTxt.TabIndex = 15;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(78, 71);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(31, 13);
+            this.label28.TabIndex = 14;
+            this.label28.Text = "建築";
+            // 
+            // citySailingTxt
+            // 
+            this.citySailingTxt.Location = new System.Drawing.Point(40, 68);
+            this.citySailingTxt.Name = "citySailingTxt";
+            this.citySailingTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySailingTxt.TabIndex = 13;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 71);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(31, 13);
+            this.label29.TabIndex = 12;
+            this.label29.Text = "航海";
+            // 
+            // cityArtTxt
+            // 
+            this.cityArtTxt.Location = new System.Drawing.Point(109, 94);
+            this.cityArtTxt.Name = "cityArtTxt";
+            this.cityArtTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityArtTxt.TabIndex = 19;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(78, 97);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(31, 13);
+            this.label30.TabIndex = 18;
+            this.label30.Text = "藝術";
+            // 
+            // cityAcademicTxt
+            // 
+            this.cityAcademicTxt.Location = new System.Drawing.Point(40, 94);
+            this.cityAcademicTxt.Name = "cityAcademicTxt";
+            this.cityAcademicTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityAcademicTxt.TabIndex = 17;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(7, 97);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(31, 13);
+            this.label31.TabIndex = 16;
+            this.label31.Text = "學術";
+            // 
+            // cityCraftTxt
+            // 
+            this.cityCraftTxt.Location = new System.Drawing.Point(109, 120);
+            this.cityCraftTxt.Name = "cityCraftTxt";
+            this.cityCraftTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCraftTxt.TabIndex = 23;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(78, 123);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(31, 13);
+            this.label32.TabIndex = 22;
+            this.label32.Text = "工藝";
+            // 
+            // cityMedicalTxt
+            // 
+            this.cityMedicalTxt.Location = new System.Drawing.Point(40, 120);
+            this.cityMedicalTxt.Name = "cityMedicalTxt";
+            this.cityMedicalTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityMedicalTxt.TabIndex = 21;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(7, 123);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(31, 13);
+            this.label33.TabIndex = 20;
+            this.label33.Text = "醫術";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.Azure;
+            this.groupBox8.Controls.Add(this.cityIronTxt);
+            this.groupBox8.Controls.Add(this.label63);
+            this.groupBox8.Controls.Add(this.cityChineseMedicineTxt);
+            this.groupBox8.Controls.Add(this.label64);
+            this.groupBox8.Controls.Add(this.cityWoodTxt);
+            this.groupBox8.Controls.Add(this.label65);
+            this.groupBox8.Controls.Add(this.cityIvoryTxt);
+            this.groupBox8.Controls.Add(this.label58);
+            this.groupBox8.Controls.Add(this.cityPearlTxt);
+            this.groupBox8.Controls.Add(this.label59);
+            this.groupBox8.Controls.Add(this.cityEmeraldTxt);
+            this.groupBox8.Controls.Add(this.label60);
+            this.groupBox8.Controls.Add(this.cityCoralTxt);
+            this.groupBox8.Controls.Add(this.label61);
+            this.groupBox8.Controls.Add(this.cityAmberTxt);
+            this.groupBox8.Controls.Add(this.label54);
+            this.groupBox8.Controls.Add(this.cityTurtleShellTxt);
+            this.groupBox8.Controls.Add(this.label55);
+            this.groupBox8.Controls.Add(this.cityDrawTxt);
+            this.groupBox8.Controls.Add(this.label56);
+            this.groupBox8.Controls.Add(this.citySpicesTxt);
+            this.groupBox8.Controls.Add(this.label57);
+            this.groupBox8.Controls.Add(this.cityGoldTxt);
+            this.groupBox8.Controls.Add(this.label50);
+            this.groupBox8.Controls.Add(this.citySilverTxt);
+            this.groupBox8.Controls.Add(this.label51);
+            this.groupBox8.Controls.Add(this.cityCopperTxt);
+            this.groupBox8.Controls.Add(this.label52);
+            this.groupBox8.Controls.Add(this.cityGlasswareTxt);
+            this.groupBox8.Controls.Add(this.label53);
+            this.groupBox8.Controls.Add(this.citySilverwareTxt);
+            this.groupBox8.Controls.Add(this.label46);
+            this.groupBox8.Controls.Add(this.cityPotteryTxt);
+            this.groupBox8.Controls.Add(this.label47);
+            this.groupBox8.Controls.Add(this.cityCeladonTxt);
+            this.groupBox8.Controls.Add(this.label48);
+            this.groupBox8.Controls.Add(this.cityCottonFabricTxt);
+            this.groupBox8.Controls.Add(this.label49);
+            this.groupBox8.Controls.Add(this.cityWoolTxt);
+            this.groupBox8.Controls.Add(this.label42);
+            this.groupBox8.Controls.Add(this.citySilkFabricTxt);
+            this.groupBox8.Controls.Add(this.label43);
+            this.groupBox8.Controls.Add(this.cityFurTxt);
+            this.groupBox8.Controls.Add(this.label44);
+            this.groupBox8.Controls.Add(this.citySaltTxt);
+            this.groupBox8.Controls.Add(this.label45);
+            this.groupBox8.Controls.Add(this.cityCamelTxt);
+            this.groupBox8.Controls.Add(this.label38);
+            this.groupBox8.Controls.Add(this.cityElephantTxt);
+            this.groupBox8.Controls.Add(this.label39);
+            this.groupBox8.Controls.Add(this.cityHorseTxt);
+            this.groupBox8.Controls.Add(this.label40);
+            this.groupBox8.Controls.Add(this.citySeasoningTxt);
+            this.groupBox8.Controls.Add(this.label41);
+            this.groupBox8.Controls.Add(this.cityTeaTxt);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.citySugarTxt);
+            this.groupBox8.Controls.Add(this.label37);
+            this.groupBox8.Controls.Add(this.cityOliveOilTxt);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.cityWineTxt);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Location = new System.Drawing.Point(267, 58);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(281, 261);
+            this.groupBox8.TabIndex = 5;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "特產品";
+            // 
+            // cityOliveOilTxt
+            // 
+            this.cityOliveOilTxt.Location = new System.Drawing.Point(115, 17);
+            this.cityOliveOilTxt.Name = "cityOliveOilTxt";
+            this.cityOliveOilTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityOliveOilTxt.TabIndex = 11;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(73, 20);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(43, 13);
+            this.label34.TabIndex = 10;
+            this.label34.Text = "橄欖油";
+            // 
+            // cityWineTxt
+            // 
+            this.cityWineTxt.Location = new System.Drawing.Point(47, 17);
+            this.cityWineTxt.Name = "cityWineTxt";
+            this.cityWineTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityWineTxt.TabIndex = 9;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(7, 20);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(43, 13);
+            this.label35.TabIndex = 8;
+            this.label35.Text = "葡萄酒";
+            // 
+            // cityTeaTxt
+            // 
+            this.cityTeaTxt.Location = new System.Drawing.Point(249, 17);
+            this.cityTeaTxt.Name = "cityTeaTxt";
+            this.cityTeaTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityTeaTxt.TabIndex = 15;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(209, 20);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(19, 13);
+            this.label36.TabIndex = 14;
+            this.label36.Text = "茶";
+            // 
+            // citySugarTxt
+            // 
+            this.citySugarTxt.Location = new System.Drawing.Point(183, 17);
+            this.citySugarTxt.Name = "citySugarTxt";
+            this.citySugarTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySugarTxt.TabIndex = 13;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(141, 20);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(31, 13);
+            this.label37.TabIndex = 12;
+            this.label37.Text = "砂糖";
+            // 
+            // cityCamelTxt
+            // 
+            this.cityCamelTxt.Location = new System.Drawing.Point(249, 47);
+            this.cityCamelTxt.Name = "cityCamelTxt";
+            this.cityCamelTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCamelTxt.TabIndex = 23;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(209, 50);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(31, 13);
+            this.label38.TabIndex = 22;
+            this.label38.Text = "駱駝";
+            // 
+            // cityElephantTxt
+            // 
+            this.cityElephantTxt.Location = new System.Drawing.Point(183, 47);
+            this.cityElephantTxt.Name = "cityElephantTxt";
+            this.cityElephantTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityElephantTxt.TabIndex = 21;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(141, 50);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(19, 13);
+            this.label39.TabIndex = 20;
+            this.label39.Text = "象";
+            // 
+            // cityHorseTxt
+            // 
+            this.cityHorseTxt.Location = new System.Drawing.Point(115, 47);
+            this.cityHorseTxt.Name = "cityHorseTxt";
+            this.cityHorseTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityHorseTxt.TabIndex = 19;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(73, 50);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(19, 13);
+            this.label40.TabIndex = 18;
+            this.label40.Text = "馬";
+            // 
+            // citySeasoningTxt
+            // 
+            this.citySeasoningTxt.Location = new System.Drawing.Point(47, 47);
+            this.citySeasoningTxt.Name = "citySeasoningTxt";
+            this.citySeasoningTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySeasoningTxt.TabIndex = 17;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(7, 50);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(43, 13);
+            this.label41.TabIndex = 16;
+            this.label41.Text = "調味料";
+            // 
+            // cityWoolTxt
+            // 
+            this.cityWoolTxt.Location = new System.Drawing.Point(249, 77);
+            this.cityWoolTxt.Name = "cityWoolTxt";
+            this.cityWoolTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityWoolTxt.TabIndex = 31;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(209, 81);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(43, 13);
+            this.label42.TabIndex = 30;
+            this.label42.Text = "毛織品";
+            // 
+            // citySilkFabricTxt
+            // 
+            this.citySilkFabricTxt.Location = new System.Drawing.Point(183, 77);
+            this.citySilkFabricTxt.Name = "citySilkFabricTxt";
+            this.citySilkFabricTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySilkFabricTxt.TabIndex = 29;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(141, 80);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(43, 13);
+            this.label43.TabIndex = 28;
+            this.label43.Text = "絹織品";
+            // 
+            // cityFurTxt
+            // 
+            this.cityFurTxt.Location = new System.Drawing.Point(115, 77);
+            this.cityFurTxt.Name = "cityFurTxt";
+            this.cityFurTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityFurTxt.TabIndex = 27;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(73, 80);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(31, 13);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "毛皮";
+            // 
+            // citySaltTxt
+            // 
+            this.citySaltTxt.Location = new System.Drawing.Point(47, 76);
+            this.citySaltTxt.Name = "citySaltTxt";
+            this.citySaltTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySaltTxt.TabIndex = 25;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(7, 80);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(19, 13);
+            this.label45.TabIndex = 24;
+            this.label45.Text = "鹽";
+            // 
+            // citySilverwareTxt
+            // 
+            this.citySilverwareTxt.Location = new System.Drawing.Point(249, 107);
+            this.citySilverwareTxt.Name = "citySilverwareTxt";
+            this.citySilverwareTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySilverwareTxt.TabIndex = 39;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(209, 111);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(31, 13);
+            this.label46.TabIndex = 38;
+            this.label46.Text = "銀器";
+            // 
+            // cityPotteryTxt
+            // 
+            this.cityPotteryTxt.Location = new System.Drawing.Point(183, 107);
+            this.cityPotteryTxt.Name = "cityPotteryTxt";
+            this.cityPotteryTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityPotteryTxt.TabIndex = 37;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(141, 110);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(43, 13);
+            this.label47.TabIndex = 36;
+            this.label47.Text = "陶瓷器";
+            // 
+            // cityCeladonTxt
+            // 
+            this.cityCeladonTxt.Location = new System.Drawing.Point(115, 107);
+            this.cityCeladonTxt.Name = "cityCeladonTxt";
+            this.cityCeladonTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCeladonTxt.TabIndex = 35;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(73, 109);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(43, 13);
+            this.label48.TabIndex = 34;
+            this.label48.Text = "青瓷器";
+            // 
+            // cityCottonFabricTxt
+            // 
+            this.cityCottonFabricTxt.Location = new System.Drawing.Point(47, 106);
+            this.cityCottonFabricTxt.Name = "cityCottonFabricTxt";
+            this.cityCottonFabricTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCottonFabricTxt.TabIndex = 33;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(7, 110);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(43, 13);
+            this.label49.TabIndex = 32;
+            this.label49.Text = "棉織品";
+            // 
+            // cityGoldTxt
+            // 
+            this.cityGoldTxt.Location = new System.Drawing.Point(249, 137);
+            this.cityGoldTxt.Name = "cityGoldTxt";
+            this.cityGoldTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityGoldTxt.TabIndex = 47;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(209, 141);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(19, 13);
+            this.label50.TabIndex = 46;
+            this.label50.Text = "金";
+            // 
+            // citySilverTxt
+            // 
+            this.citySilverTxt.Location = new System.Drawing.Point(183, 137);
+            this.citySilverTxt.Name = "citySilverTxt";
+            this.citySilverTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySilverTxt.TabIndex = 45;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(141, 140);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(19, 13);
+            this.label51.TabIndex = 44;
+            this.label51.Text = "銀";
+            // 
+            // cityCopperTxt
+            // 
+            this.cityCopperTxt.Location = new System.Drawing.Point(115, 137);
+            this.cityCopperTxt.Name = "cityCopperTxt";
+            this.cityCopperTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCopperTxt.TabIndex = 43;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(73, 140);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(19, 13);
+            this.label52.TabIndex = 42;
+            this.label52.Text = "銅";
+            // 
+            // cityGlasswareTxt
+            // 
+            this.cityGlasswareTxt.Location = new System.Drawing.Point(47, 136);
+            this.cityGlasswareTxt.Name = "cityGlasswareTxt";
+            this.cityGlasswareTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityGlasswareTxt.TabIndex = 41;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(7, 140);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(43, 13);
+            this.label53.TabIndex = 40;
+            this.label53.Text = "玻璃器";
+            // 
+            // cityAmberTxt
+            // 
+            this.cityAmberTxt.Location = new System.Drawing.Point(248, 167);
+            this.cityAmberTxt.Name = "cityAmberTxt";
+            this.cityAmberTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityAmberTxt.TabIndex = 55;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(209, 171);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(31, 13);
+            this.label54.TabIndex = 54;
+            this.label54.Text = "琥珀";
+            // 
+            // cityTurtleShellTxt
+            // 
+            this.cityTurtleShellTxt.Location = new System.Drawing.Point(182, 167);
+            this.cityTurtleShellTxt.Name = "cityTurtleShellTxt";
+            this.cityTurtleShellTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityTurtleShellTxt.TabIndex = 53;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(141, 170);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(31, 13);
+            this.label55.TabIndex = 52;
+            this.label55.Text = "鱉甲";
+            // 
+            // cityDrawTxt
+            // 
+            this.cityDrawTxt.Location = new System.Drawing.Point(114, 167);
+            this.cityDrawTxt.Name = "cityDrawTxt";
+            this.cityDrawTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityDrawTxt.TabIndex = 51;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(73, 169);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(31, 13);
+            this.label56.TabIndex = 50;
+            this.label56.Text = "繪畫";
+            // 
+            // citySpicesTxt
+            // 
+            this.citySpicesTxt.Location = new System.Drawing.Point(47, 166);
+            this.citySpicesTxt.Name = "citySpicesTxt";
+            this.citySpicesTxt.Size = new System.Drawing.Size(26, 20);
+            this.citySpicesTxt.TabIndex = 49;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(7, 170);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(31, 13);
+            this.label57.TabIndex = 48;
+            this.label57.Text = "香料";
+            // 
+            // cityIvoryTxt
+            // 
+            this.cityIvoryTxt.Location = new System.Drawing.Point(249, 197);
+            this.cityIvoryTxt.Name = "cityIvoryTxt";
+            this.cityIvoryTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityIvoryTxt.TabIndex = 63;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(209, 201);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(31, 13);
+            this.label58.TabIndex = 62;
+            this.label58.Text = "象牙";
+            // 
+            // cityPearlTxt
+            // 
+            this.cityPearlTxt.Location = new System.Drawing.Point(183, 197);
+            this.cityPearlTxt.Name = "cityPearlTxt";
+            this.cityPearlTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityPearlTxt.TabIndex = 61;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(141, 200);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(31, 13);
+            this.label59.TabIndex = 60;
+            this.label59.Text = "珍珠";
+            // 
+            // cityEmeraldTxt
+            // 
+            this.cityEmeraldTxt.Location = new System.Drawing.Point(115, 197);
+            this.cityEmeraldTxt.Name = "cityEmeraldTxt";
+            this.cityEmeraldTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityEmeraldTxt.TabIndex = 59;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(73, 200);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(31, 13);
+            this.label60.TabIndex = 58;
+            this.label60.Text = "翡翠";
+            // 
+            // cityCoralTxt
+            // 
+            this.cityCoralTxt.Location = new System.Drawing.Point(47, 196);
+            this.cityCoralTxt.Name = "cityCoralTxt";
+            this.cityCoralTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityCoralTxt.TabIndex = 57;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(7, 200);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(31, 13);
+            this.label61.TabIndex = 56;
+            this.label61.Text = "珊瑚";
+            // 
+            // cityIronTxt
+            // 
+            this.cityIronTxt.Location = new System.Drawing.Point(183, 228);
+            this.cityIronTxt.Name = "cityIronTxt";
+            this.cityIronTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityIronTxt.TabIndex = 69;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(141, 231);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(19, 13);
+            this.label63.TabIndex = 68;
+            this.label63.Text = "鐵";
+            // 
+            // cityChineseMedicineTxt
+            // 
+            this.cityChineseMedicineTxt.Location = new System.Drawing.Point(115, 228);
+            this.cityChineseMedicineTxt.Name = "cityChineseMedicineTxt";
+            this.cityChineseMedicineTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityChineseMedicineTxt.TabIndex = 67;
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(73, 230);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(31, 13);
+            this.label64.TabIndex = 66;
+            this.label64.Text = "中藥";
+            // 
+            // cityWoodTxt
+            // 
+            this.cityWoodTxt.Location = new System.Drawing.Point(47, 227);
+            this.cityWoodTxt.Name = "cityWoodTxt";
+            this.cityWoodTxt.Size = new System.Drawing.Size(26, 20);
+            this.cityWoodTxt.TabIndex = 65;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(7, 231);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(31, 13);
+            this.label65.TabIndex = 64;
+            this.label65.Text = "木材";
+            // 
+            // cityNormalFullBtn
+            // 
+            this.cityNormalFullBtn.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.cityNormalFullBtn.Location = new System.Drawing.Point(421, 9);
+            this.cityNormalFullBtn.Name = "cityNormalFullBtn";
+            this.cityNormalFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.cityNormalFullBtn.TabIndex = 6;
+            this.cityNormalFullBtn.Text = "一般全滿";
+            this.cityNormalFullBtn.UseVisualStyleBackColor = false;
+            // 
+            // cityCultureFullBtn
+            // 
+            this.cityCultureFullBtn.BackColor = System.Drawing.Color.Honeydew;
+            this.cityCultureFullBtn.Location = new System.Drawing.Point(463, 9);
+            this.cityCultureFullBtn.Name = "cityCultureFullBtn";
+            this.cityCultureFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.cityCultureFullBtn.TabIndex = 7;
+            this.cityCultureFullBtn.Text = "文化全滿";
+            this.cityCultureFullBtn.UseVisualStyleBackColor = false;
+            // 
+            // cityStapleFullBtn
+            // 
+            this.cityStapleFullBtn.BackColor = System.Drawing.Color.Azure;
+            this.cityStapleFullBtn.Location = new System.Drawing.Point(505, 9);
+            this.cityStapleFullBtn.Name = "cityStapleFullBtn";
+            this.cityStapleFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.cityStapleFullBtn.TabIndex = 8;
+            this.cityStapleFullBtn.Text = "特產全滿";
+            this.cityStapleFullBtn.UseVisualStyleBackColor = false;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -751,6 +1778,8 @@
             this.tabControl.ResumeLayout(false);
             this.generalTab.ResumeLayout(false);
             this.generalTab.PerformLayout();
+            this.cityTab.ResumeLayout(false);
+            this.cityTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -761,6 +1790,12 @@
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -811,11 +1846,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton generalMoveYetRadioBtn;
         private System.Windows.Forms.RadioButton generalMovedRadioBtn;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button generalArmsFullBtn;
+        private System.Windows.Forms.Button generalBattleFullBtn;
+        private System.Windows.Forms.Button generalNormalFullBtn;
+        private System.Windows.Forms.Button generalFullBtn;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.TextBox generalNavyTxt;
         private System.Windows.Forms.Label label16;
@@ -832,6 +1866,108 @@
         private System.Windows.Forms.CheckBox generalRunningFireCheckBox;
         private System.Windows.Forms.CheckBox generalAssaultCheckBox;
         private System.Windows.Forms.CheckBox generalMobileCheckBox;
+        private System.Windows.Forms.Button cityStapleFullBtn;
+        private System.Windows.Forms.Button cityCultureFullBtn;
+        private System.Windows.Forms.Button cityNormalFullBtn;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.TextBox cityIronTxt;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.TextBox cityChineseMedicineTxt;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.TextBox cityWoodTxt;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.TextBox cityIvoryTxt;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TextBox cityPearlTxt;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.TextBox cityEmeraldTxt;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.TextBox cityCoralTxt;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.TextBox cityAmberTxt;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.TextBox cityTurtleShellTxt;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox cityDrawTxt;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.TextBox citySpicesTxt;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TextBox cityGoldTxt;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox citySilverTxt;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.TextBox cityCopperTxt;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox cityGlasswareTxt;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.TextBox citySilverwareTxt;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox cityPotteryTxt;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox cityCeladonTxt;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox cityCottonFabricTxt;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.TextBox cityWoolTxt;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox citySilkFabricTxt;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.TextBox cityFurTxt;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox citySaltTxt;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.TextBox cityCamelTxt;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox cityElephantTxt;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox cityHorseTxt;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox citySeasoningTxt;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox cityTeaTxt;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox citySugarTxt;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.TextBox cityOliveOilTxt;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox cityWineTxt;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TextBox cityCraftTxt;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox cityMedicalTxt;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox cityArtTxt;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox cityAcademicTxt;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox cityBuildingTxt;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox citySailingTxt;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox cityTacticsTxt;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox cityWeaponTxt;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox cityHusbandryTxt;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox cityFarmTxt;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox cityArmyTxt;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox cityFoodTxt;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox cityMoneyTxt;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox cityDefenceTxt;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox cityScaleTxt;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label cityNameLabel;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ListBox cityListBox;
+        private System.Windows.Forms.Button generalInternalAffairsFullBtn;
     }
 }
 
