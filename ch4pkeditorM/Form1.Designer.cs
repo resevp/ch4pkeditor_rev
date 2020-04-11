@@ -194,9 +194,25 @@
             this.cityNormalFullBtn = new System.Windows.Forms.Button();
             this.cityCultureFullBtn = new System.Windows.Forms.Button();
             this.cityStapleFullBtn = new System.Windows.Forms.Button();
+            this.wifeListBox = new System.Windows.Forms.ListBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pregnant1stRadioBtn = new System.Windows.Forms.RadioButton();
+            this.pregnant2ndRadioBtn = new System.Windows.Forms.RadioButton();
+            this.pregnant3rdRadioBtn = new System.Windows.Forms.RadioButton();
+            this.pregnant4thRadioBtn = new System.Windows.Forms.RadioButton();
+            this.pregnant5thRadioBtn = new System.Windows.Forms.RadioButton();
+            this.notPregnantRadioBtn = new System.Windows.Forms.RadioButton();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.babySexMaleRadioBtn = new System.Windows.Forms.RadioButton();
+            this.babySexFemaleRadioBtn = new System.Windows.Forms.RadioButton();
+            this.husbandNameComboBox = new System.Windows.Forms.ComboBox();
+            this.wifeNameLabel = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.generalTab.SuspendLayout();
             this.cityTab.SuspendLayout();
+            this.wifeTab.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -205,6 +221,8 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -269,6 +287,13 @@
             // 
             // wifeTab
             // 
+            this.wifeTab.Controls.Add(this.wifeNameLabel);
+            this.wifeTab.Controls.Add(this.husbandNameComboBox);
+            this.wifeTab.Controls.Add(this.groupBox10);
+            this.wifeTab.Controls.Add(this.groupBox9);
+            this.wifeTab.Controls.Add(this.label66);
+            this.wifeTab.Controls.Add(this.label62);
+            this.wifeTab.Controls.Add(this.wifeListBox);
             this.wifeTab.Location = new System.Drawing.Point(4, 22);
             this.wifeTab.Name = "wifeTab";
             this.wifeTab.Size = new System.Drawing.Size(554, 325);
@@ -1760,6 +1785,162 @@
             this.cityStapleFullBtn.Text = "特產全滿";
             this.cityStapleFullBtn.UseVisualStyleBackColor = false;
             // 
+            // wifeListBox
+            // 
+            this.wifeListBox.FormattingEnabled = true;
+            this.wifeListBox.Location = new System.Drawing.Point(7, 6);
+            this.wifeListBox.Name = "wifeListBox";
+            this.wifeListBox.Size = new System.Drawing.Size(100, 316);
+            this.wifeListBox.TabIndex = 0;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(128, 25);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(34, 13);
+            this.label62.TabIndex = 1;
+            this.label62.Text = "妃子:";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(128, 58);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(34, 13);
+            this.label66.TabIndex = 2;
+            this.label66.Text = "丈夫:";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.notPregnantRadioBtn);
+            this.groupBox9.Controls.Add(this.pregnant5thRadioBtn);
+            this.groupBox9.Controls.Add(this.pregnant4thRadioBtn);
+            this.groupBox9.Controls.Add(this.pregnant3rdRadioBtn);
+            this.groupBox9.Controls.Add(this.pregnant2ndRadioBtn);
+            this.groupBox9.Controls.Add(this.pregnant1stRadioBtn);
+            this.groupBox9.Location = new System.Drawing.Point(131, 109);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(406, 50);
+            this.groupBox9.TabIndex = 3;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "懷孕情況";
+            // 
+            // pregnant1stRadioBtn
+            // 
+            this.pregnant1stRadioBtn.AutoSize = true;
+            this.pregnant1stRadioBtn.Location = new System.Drawing.Point(7, 20);
+            this.pregnant1stRadioBtn.Name = "pregnant1stRadioBtn";
+            this.pregnant1stRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.pregnant1stRadioBtn.TabIndex = 0;
+            this.pregnant1stRadioBtn.TabStop = true;
+            this.pregnant1stRadioBtn.Text = "第一期";
+            this.pregnant1stRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // pregnant2ndRadioBtn
+            // 
+            this.pregnant2ndRadioBtn.AutoSize = true;
+            this.pregnant2ndRadioBtn.Location = new System.Drawing.Point(74, 20);
+            this.pregnant2ndRadioBtn.Name = "pregnant2ndRadioBtn";
+            this.pregnant2ndRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.pregnant2ndRadioBtn.TabIndex = 1;
+            this.pregnant2ndRadioBtn.TabStop = true;
+            this.pregnant2ndRadioBtn.Text = "第二期";
+            this.pregnant2ndRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // pregnant3rdRadioBtn
+            // 
+            this.pregnant3rdRadioBtn.AutoSize = true;
+            this.pregnant3rdRadioBtn.Location = new System.Drawing.Point(141, 20);
+            this.pregnant3rdRadioBtn.Name = "pregnant3rdRadioBtn";
+            this.pregnant3rdRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.pregnant3rdRadioBtn.TabIndex = 2;
+            this.pregnant3rdRadioBtn.TabStop = true;
+            this.pregnant3rdRadioBtn.Text = "第三期";
+            this.pregnant3rdRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // pregnant4thRadioBtn
+            // 
+            this.pregnant4thRadioBtn.AutoSize = true;
+            this.pregnant4thRadioBtn.Location = new System.Drawing.Point(208, 20);
+            this.pregnant4thRadioBtn.Name = "pregnant4thRadioBtn";
+            this.pregnant4thRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.pregnant4thRadioBtn.TabIndex = 3;
+            this.pregnant4thRadioBtn.TabStop = true;
+            this.pregnant4thRadioBtn.Text = "第四期";
+            this.pregnant4thRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // pregnant5thRadioBtn
+            // 
+            this.pregnant5thRadioBtn.AutoSize = true;
+            this.pregnant5thRadioBtn.Location = new System.Drawing.Point(275, 20);
+            this.pregnant5thRadioBtn.Name = "pregnant5thRadioBtn";
+            this.pregnant5thRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.pregnant5thRadioBtn.TabIndex = 4;
+            this.pregnant5thRadioBtn.TabStop = true;
+            this.pregnant5thRadioBtn.Text = "第五期";
+            this.pregnant5thRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // notPregnantRadioBtn
+            // 
+            this.notPregnantRadioBtn.AutoSize = true;
+            this.notPregnantRadioBtn.Location = new System.Drawing.Point(339, 20);
+            this.notPregnantRadioBtn.Name = "notPregnantRadioBtn";
+            this.notPregnantRadioBtn.Size = new System.Drawing.Size(61, 17);
+            this.notPregnantRadioBtn.TabIndex = 5;
+            this.notPregnantRadioBtn.TabStop = true;
+            this.notPregnantRadioBtn.Text = "未懷孕";
+            this.notPregnantRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.babySexFemaleRadioBtn);
+            this.groupBox10.Controls.Add(this.babySexMaleRadioBtn);
+            this.groupBox10.Location = new System.Drawing.Point(131, 199);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(135, 50);
+            this.groupBox10.TabIndex = 4;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "懷孕胎兒";
+            // 
+            // babySexMaleRadioBtn
+            // 
+            this.babySexMaleRadioBtn.AutoSize = true;
+            this.babySexMaleRadioBtn.Location = new System.Drawing.Point(7, 19);
+            this.babySexMaleRadioBtn.Name = "babySexMaleRadioBtn";
+            this.babySexMaleRadioBtn.Size = new System.Drawing.Size(37, 17);
+            this.babySexMaleRadioBtn.TabIndex = 6;
+            this.babySexMaleRadioBtn.TabStop = true;
+            this.babySexMaleRadioBtn.Text = "男";
+            this.babySexMaleRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // babySexFemaleRadioBtn
+            // 
+            this.babySexFemaleRadioBtn.AutoSize = true;
+            this.babySexFemaleRadioBtn.Location = new System.Drawing.Point(74, 19);
+            this.babySexFemaleRadioBtn.Name = "babySexFemaleRadioBtn";
+            this.babySexFemaleRadioBtn.Size = new System.Drawing.Size(37, 17);
+            this.babySexFemaleRadioBtn.TabIndex = 7;
+            this.babySexFemaleRadioBtn.TabStop = true;
+            this.babySexFemaleRadioBtn.Text = "女";
+            this.babySexFemaleRadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // husbandNameComboBox
+            // 
+            this.husbandNameComboBox.FormattingEnabled = true;
+            this.husbandNameComboBox.Location = new System.Drawing.Point(168, 55);
+            this.husbandNameComboBox.Name = "husbandNameComboBox";
+            this.husbandNameComboBox.Size = new System.Drawing.Size(121, 21);
+            this.husbandNameComboBox.TabIndex = 5;
+            // 
+            // wifeNameLabel
+            // 
+            this.wifeNameLabel.AutoSize = true;
+            this.wifeNameLabel.Location = new System.Drawing.Point(168, 25);
+            this.wifeNameLabel.Name = "wifeNameLabel";
+            this.wifeNameLabel.Size = new System.Drawing.Size(0, 13);
+            this.wifeNameLabel.TabIndex = 6;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1780,6 +1961,8 @@
             this.generalTab.PerformLayout();
             this.cityTab.ResumeLayout(false);
             this.cityTab.PerformLayout();
+            this.wifeTab.ResumeLayout(false);
+            this.wifeTab.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -1796,6 +1979,10 @@
             this.groupBox7.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1968,6 +2155,21 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ListBox cityListBox;
         private System.Windows.Forms.Button generalInternalAffairsFullBtn;
+        private System.Windows.Forms.Label wifeNameLabel;
+        private System.Windows.Forms.ComboBox husbandNameComboBox;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.RadioButton babySexFemaleRadioBtn;
+        private System.Windows.Forms.RadioButton babySexMaleRadioBtn;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.RadioButton notPregnantRadioBtn;
+        private System.Windows.Forms.RadioButton pregnant5thRadioBtn;
+        private System.Windows.Forms.RadioButton pregnant4thRadioBtn;
+        private System.Windows.Forms.RadioButton pregnant3rdRadioBtn;
+        private System.Windows.Forms.RadioButton pregnant2ndRadioBtn;
+        private System.Windows.Forms.RadioButton pregnant1stRadioBtn;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.ListBox wifeListBox;
     }
 }
 
