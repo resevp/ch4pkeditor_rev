@@ -1,3 +1,5 @@
+![http://url/to/img.png](https://raw.githubusercontent.com/resevp/ch4pkeditor_rev/refs/heads/master/main.png)
+
 此軟件由 Enzo 創建，Rev 修改。基於 Enzo 3.0.3 的版本而修改成 Rev 1.0 版本。<br />
 所以發佈版本稱爲：Enzo 3.0.3 + Rev 1.0<br />
 Rev 版下載：https://github.com/resevp/ch4pkeditor_rev/releases<br />
@@ -32,3 +34,4 @@ Rev 1.0 版的修改細節：
 - 增加批量修改妻子懷孕。原版只能逐一修改。
 - 解決bug：原版在搜索游戲程序時，只搜索特定的英文字母大小的程序名 (Ckw95.exe) 。如果你的游戲程序啓動名字是全小字母 (ckw95.exe)，或全大字母 (CKW95.exe)，修改器可能無法成功搜索。Rev 1.0 在搜索游戲 exe 時將忽略大小字母。
 - 取讀游戲資料后，顯示將軍總數。(游戲武將數上限為 500 人)
+
