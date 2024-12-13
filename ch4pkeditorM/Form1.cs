@@ -104,7 +104,7 @@ namespace ch4pkeditorM
         {
             if (Core.TextEncoding == "")
             {
-                string msg = "您的游戏版本是繁体吗？ \r\n\r\nYes=繁体(Big5)\r\nNo=简体";
+                string msg = "您的游戏版本是繁体吗？ \r\n\r\nYes=繁体 (Big5)\r\nNo=简体 (GB2312)";
 
                 if (MessageBox.Show(msg, "繁体/简体", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
@@ -644,6 +644,5 @@ namespace ch4pkeditorM
         {
             _alive = false;
         }
-
     }
 }

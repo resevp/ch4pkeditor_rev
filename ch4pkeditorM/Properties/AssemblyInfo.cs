@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ch4pkeditorM")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("ch4pkeditorM_rev_1")]
+[assembly: AssemblyDescription("ch4pkeditorM_rev_1")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Enzo")]
 [assembly: AssemblyProduct("ch4pkeditorM")]

@@ -190,6 +190,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.cityListBox = new System.Windows.Forms.ListBox();
             this.wifeTab = new System.Windows.Forms.TabPage();
+            this.wifeAllPregnant5 = new System.Windows.Forms.Button();
             this.wifeSaveBtn = new System.Windows.Forms.Button();
             this.wifeNameLabel = new System.Windows.Forms.Label();
             this.wifeHusbandNameComboBox = new System.Windows.Forms.ComboBox();
@@ -206,13 +207,14 @@
             this.label66 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.wifeListBox = new System.Windows.Forms.ListBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.loadGameBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.sysInfoTxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.versionLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.wifeAllPregnant5 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.generalTab.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -228,6 +230,7 @@
             this.wifeTab.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -235,6 +238,7 @@
             this.tabControl.Controls.Add(this.generalTab);
             this.tabControl.Controls.Add(this.cityTab);
             this.tabControl.Controls.Add(this.wifeTab);
+            this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Location = new System.Drawing.Point(1, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -1787,6 +1791,18 @@
             this.wifeTab.Text = "妃子資訊";
             this.wifeTab.UseVisualStyleBackColor = true;
             // 
+            // wifeAllPregnant5
+            // 
+            this.wifeAllPregnant5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.wifeAllPregnant5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wifeAllPregnant5.Location = new System.Drawing.Point(410, 6);
+            this.wifeAllPregnant5.Name = "wifeAllPregnant5";
+            this.wifeAllPregnant5.Size = new System.Drawing.Size(75, 43);
+            this.wifeAllPregnant5.TabIndex = 24;
+            this.wifeAllPregnant5.Text = "全妻孕第五期男";
+            this.wifeAllPregnant5.UseVisualStyleBackColor = false;
+            this.wifeAllPregnant5.Click += new System.EventHandler(this.wifeAllPregnant5_Click);
+            // 
             // wifeSaveBtn
             // 
             this.wifeSaveBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -1957,6 +1973,28 @@
             this.wifeListBox.TabIndex = 0;
             this.wifeListBox.SelectedIndexChanged += new System.EventHandler(this.wifeListBox_SelectedIndexChanged);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(554, 343);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.Text = "關於";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox1.Location = new System.Drawing.Point(3, 3);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox1.Size = new System.Drawing.Size(548, 337);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            // 
             // loadGameBtn
             // 
             this.loadGameBtn.Location = new System.Drawing.Point(489, 3);
@@ -2006,23 +2044,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(498, 485);
+            this.label4.Location = new System.Drawing.Point(281, 487);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.Size = new System.Drawing.Size(276, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "作者: Enzo";
-            // 
-            // wifeAllPregnant5
-            // 
-            this.wifeAllPregnant5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.wifeAllPregnant5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wifeAllPregnant5.Location = new System.Drawing.Point(410, 6);
-            this.wifeAllPregnant5.Name = "wifeAllPregnant5";
-            this.wifeAllPregnant5.Size = new System.Drawing.Size(75, 43);
-            this.wifeAllPregnant5.TabIndex = 24;
-            this.wifeAllPregnant5.Text = "全妻孕第五期男";
-            this.wifeAllPregnant5.UseVisualStyleBackColor = false;
-            this.wifeAllPregnant5.Click += new System.EventHandler(this.wifeAllPregnant5_Click);
+            this.label4.Text = "原作者: Enzo (基於 3.0.3 版本) 修改者: Rev (1.0 版本)";
             // 
             // mainForm
             // 
@@ -2068,6 +2094,8 @@
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2259,6 +2287,8 @@
         private System.Windows.Forms.NumericUpDown cityDefaultCultureValue;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Button wifeAllPregnant5;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
