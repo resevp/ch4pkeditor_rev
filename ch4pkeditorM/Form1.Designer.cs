@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.generalTab = new System.Windows.Forms.TabPage();
+            this.generalEverybodyFullBtn = new System.Windows.Forms.Button();
             this.generalSaveBtn = new System.Windows.Forms.Button();
             this.generalArmsFullBtn = new System.Windows.Forms.Button();
             this.generalBattleFullBtn = new System.Windows.Forms.Button();
@@ -83,6 +84,7 @@
             this.generalCityListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cityTab = new System.Windows.Forms.TabPage();
+            this.cityAllCitiesNormalFullBtn = new System.Windows.Forms.Button();
             this.citySaveBtn = new System.Windows.Forms.Button();
             this.cityStapleFullBtn = new System.Windows.Forms.Button();
             this.cityCultureFullBtn = new System.Windows.Forms.Button();
@@ -151,6 +153,8 @@
             this.cityWineTxt = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.cityDefaultCultureValue = new System.Windows.Forms.NumericUpDown();
+            this.label67 = new System.Windows.Forms.Label();
             this.cityCraftTxt = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.cityMedicalTxt = new System.Windows.Forms.TextBox();
@@ -208,6 +212,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.versionLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.wifeAllPregnant5 = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.generalTab.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -218,6 +223,7 @@
             this.cityTab.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cityDefaultCultureValue)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.wifeTab.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -232,11 +238,12 @@
             this.tabControl.Location = new System.Drawing.Point(1, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(562, 351);
+            this.tabControl.Size = new System.Drawing.Size(562, 369);
             this.tabControl.TabIndex = 0;
             // 
             // generalTab
             // 
+            this.generalTab.Controls.Add(this.generalEverybodyFullBtn);
             this.generalTab.Controls.Add(this.generalSaveBtn);
             this.generalTab.Controls.Add(this.generalArmsFullBtn);
             this.generalTab.Controls.Add(this.generalBattleFullBtn);
@@ -257,10 +264,22 @@
             this.generalTab.Location = new System.Drawing.Point(4, 22);
             this.generalTab.Name = "generalTab";
             this.generalTab.Padding = new System.Windows.Forms.Padding(3);
-            this.generalTab.Size = new System.Drawing.Size(554, 325);
+            this.generalTab.Size = new System.Drawing.Size(554, 343);
             this.generalTab.TabIndex = 0;
             this.generalTab.Text = "武將資訊";
             this.generalTab.UseVisualStyleBackColor = true;
+            // 
+            // generalEverybodyFullBtn
+            // 
+            this.generalEverybodyFullBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.generalEverybodyFullBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.generalEverybodyFullBtn.Location = new System.Drawing.Point(218, 6);
+            this.generalEverybodyFullBtn.Name = "generalEverybodyFullBtn";
+            this.generalEverybodyFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.generalEverybodyFullBtn.TabIndex = 22;
+            this.generalEverybodyFullBtn.Text = "全將全滿";
+            this.generalEverybodyFullBtn.UseVisualStyleBackColor = false;
+            this.generalEverybodyFullBtn.Click += new System.EventHandler(this.generalEverybodyFullBtn_Click);
             // 
             // generalSaveBtn
             // 
@@ -763,6 +782,7 @@
             // 
             // cityTab
             // 
+            this.cityTab.Controls.Add(this.cityAllCitiesNormalFullBtn);
             this.cityTab.Controls.Add(this.citySaveBtn);
             this.cityTab.Controls.Add(this.cityStapleFullBtn);
             this.cityTab.Controls.Add(this.cityCultureFullBtn);
@@ -776,10 +796,21 @@
             this.cityTab.Location = new System.Drawing.Point(4, 22);
             this.cityTab.Name = "cityTab";
             this.cityTab.Padding = new System.Windows.Forms.Padding(3);
-            this.cityTab.Size = new System.Drawing.Size(554, 325);
+            this.cityTab.Size = new System.Drawing.Size(554, 343);
             this.cityTab.TabIndex = 1;
             this.cityTab.Text = "城市資訊";
             this.cityTab.UseVisualStyleBackColor = true;
+            // 
+            // cityAllCitiesNormalFullBtn
+            // 
+            this.cityAllCitiesNormalFullBtn.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.cityAllCitiesNormalFullBtn.Location = new System.Drawing.Point(314, 7);
+            this.cityAllCitiesNormalFullBtn.Name = "cityAllCitiesNormalFullBtn";
+            this.cityAllCitiesNormalFullBtn.Size = new System.Drawing.Size(43, 43);
+            this.cityAllCitiesNormalFullBtn.TabIndex = 23;
+            this.cityAllCitiesNormalFullBtn.Text = "全城全滿";
+            this.cityAllCitiesNormalFullBtn.UseVisualStyleBackColor = false;
+            this.cityAllCitiesNormalFullBtn.Click += new System.EventHandler(this.cityAllCitiesNormalFullBtn_Click);
             // 
             // citySaveBtn
             // 
@@ -1397,6 +1428,8 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Honeydew;
+            this.groupBox7.Controls.Add(this.cityDefaultCultureValue);
+            this.groupBox7.Controls.Add(this.label67);
             this.groupBox7.Controls.Add(this.cityCraftTxt);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Controls.Add(this.cityMedicalTxt);
@@ -1419,10 +1452,36 @@
             this.groupBox7.Controls.Add(this.label25);
             this.groupBox7.Location = new System.Drawing.Point(115, 167);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(145, 152);
+            this.groupBox7.Size = new System.Drawing.Size(145, 170);
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "文化";
+            // 
+            // cityDefaultCultureValue
+            // 
+            this.cityDefaultCultureValue.Location = new System.Drawing.Point(67, 146);
+            this.cityDefaultCultureValue.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            this.cityDefaultCultureValue.Name = "cityDefaultCultureValue";
+            this.cityDefaultCultureValue.Size = new System.Drawing.Size(55, 20);
+            this.cityDefaultCultureValue.TabIndex = 25;
+            this.cityDefaultCultureValue.Value = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(6, 149);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(55, 13);
+            this.label67.TabIndex = 24;
+            this.label67.Text = "各文化值";
             // 
             // cityCraftTxt
             // 
@@ -1706,12 +1765,13 @@
             this.cityListBox.FormattingEnabled = true;
             this.cityListBox.Location = new System.Drawing.Point(7, 6);
             this.cityListBox.Name = "cityListBox";
-            this.cityListBox.Size = new System.Drawing.Size(100, 316);
+            this.cityListBox.Size = new System.Drawing.Size(100, 329);
             this.cityListBox.TabIndex = 0;
             this.cityListBox.SelectedIndexChanged += new System.EventHandler(this.cityListBox_SelectedIndexChanged);
             // 
             // wifeTab
             // 
+            this.wifeTab.Controls.Add(this.wifeAllPregnant5);
             this.wifeTab.Controls.Add(this.wifeSaveBtn);
             this.wifeTab.Controls.Add(this.wifeNameLabel);
             this.wifeTab.Controls.Add(this.wifeHusbandNameComboBox);
@@ -1722,7 +1782,7 @@
             this.wifeTab.Controls.Add(this.wifeListBox);
             this.wifeTab.Location = new System.Drawing.Point(4, 22);
             this.wifeTab.Name = "wifeTab";
-            this.wifeTab.Size = new System.Drawing.Size(554, 325);
+            this.wifeTab.Size = new System.Drawing.Size(554, 343);
             this.wifeTab.TabIndex = 2;
             this.wifeTab.Text = "妃子資訊";
             this.wifeTab.UseVisualStyleBackColor = true;
@@ -1910,7 +1970,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 366);
+            this.label2.Location = new System.Drawing.Point(2, 384);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 2;
@@ -1919,16 +1979,16 @@
             // sysInfoTxt
             // 
             this.sysInfoTxt.Enabled = false;
-            this.sysInfoTxt.Location = new System.Drawing.Point(1, 382);
+            this.sysInfoTxt.Location = new System.Drawing.Point(1, 400);
             this.sysInfoTxt.Multiline = true;
             this.sysInfoTxt.Name = "sysInfoTxt";
-            this.sysInfoTxt.Size = new System.Drawing.Size(562, 76);
+            this.sysInfoTxt.Size = new System.Drawing.Size(562, 82);
             this.sysInfoTxt.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 461);
+            this.label3.Location = new System.Drawing.Point(2, 485);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 4;
@@ -1937,7 +1997,7 @@
             // versionLabel
             // 
             this.versionLabel.AutoSize = true;
-            this.versionLabel.Location = new System.Drawing.Point(34, 461);
+            this.versionLabel.Location = new System.Drawing.Point(42, 485);
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(10, 13);
             this.versionLabel.TabIndex = 5;
@@ -1946,17 +2006,29 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(502, 461);
+            this.label4.Location = new System.Drawing.Point(498, 485);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "作者: Enzo";
             // 
+            // wifeAllPregnant5
+            // 
+            this.wifeAllPregnant5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.wifeAllPregnant5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wifeAllPregnant5.Location = new System.Drawing.Point(410, 6);
+            this.wifeAllPregnant5.Name = "wifeAllPregnant5";
+            this.wifeAllPregnant5.Size = new System.Drawing.Size(75, 43);
+            this.wifeAllPregnant5.TabIndex = 24;
+            this.wifeAllPregnant5.Text = "全妻孕第五期男";
+            this.wifeAllPregnant5.UseVisualStyleBackColor = false;
+            this.wifeAllPregnant5.Click += new System.EventHandler(this.wifeAllPregnant5_Click);
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 478);
+            this.ClientSize = new System.Drawing.Size(564, 507);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.label3);
@@ -1987,6 +2059,7 @@
             this.groupBox8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cityDefaultCultureValue)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.wifeTab.ResumeLayout(false);
@@ -2181,6 +2254,11 @@
         private System.Windows.Forms.Button generalSaveBtn;
         private System.Windows.Forms.Button citySaveBtn;
         private System.Windows.Forms.Button wifeSaveBtn;
+        private System.Windows.Forms.Button generalEverybodyFullBtn;
+        private System.Windows.Forms.Button cityAllCitiesNormalFullBtn;
+        private System.Windows.Forms.NumericUpDown cityDefaultCultureValue;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Button wifeAllPregnant5;
     }
 }
 

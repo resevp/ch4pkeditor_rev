@@ -18,10 +18,12 @@ namespace ch4pkeditorM
         private bool _alive = true;
         private bool _isInForeGround = true;
 
+        bool _loadingInProgress = false;
+
         public mainForm()
         {
             InitializeComponent();
-            initializeEditorFocusMonitor();
+            //initializeEditorFocusMonitor();
             versionLabel.Text = Application.ProductVersion;
         }
         private void initializeEditorFocusMonitor()
@@ -49,15 +51,22 @@ namespace ch4pkeditorM
         {
             Invoke((MethodInvoker)delegate
             {
-                foreach(Control ctrl in Controls)
+                foreach (Control ctrl in Controls)
                 {
                     ctrl.Enabled = enable;
                 }
             });
         }
-        
+
         private void loadMemoryData()
         {
+            // check is the loading is running, if yes, do not run the process again
+            if (_loadingInProgress)
+                return;
+
+            // tell the program, the loading process start now
+            _loadingInProgress = true;
+
             ShowMessage("讀取資料中，請稍後。");
             setControls(false);
             Task t = new Task(() =>
@@ -80,15 +89,34 @@ namespace ch4pkeditorM
                     BindListBox(wifeListBox, Center.shared.WifeList, wifeListBox_SelectedIndexChanged);
                     BindComboBox(wifeHusbandNameComboBox, Center.shared.HusbandList, wifeHusbandNameComboBox_SelectedIndexChanged);
                     setControls(true);
+                    ShowMessage("全城市数：" + cityListBox.Items.Count);
+                    ShowMessage("全武将总数：" + generalListBox.Items.Count);
                     ShowMessage("讀取完畢。");
                 }
+
+                // here, tell the program the loading progress is completed.
+                _loadingInProgress = false;
             });
             t.Start();
         }
 
         private void loadGameBtn_Click(object sender, EventArgs e)
         {
-            List<Process> process = Core.shared.FindProcess("Ckw95");
+            if (Core.TextEncoding == "")
+            {
+                string msg = "您的游戏版本是繁体吗？ \r\n\r\nYes=繁体(Big5)\r\nNo=简体";
+
+                if (MessageBox.Show(msg, "繁体/简体", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Core.TextEncoding = "Big5";
+                }
+                else
+                {
+                    Core.TextEncoding = "GB2312";
+                }
+            }
+
+            List<Process> process = Core.shared.FindProcess("ckw95");
             if (process.Count > 0)
             {
                 Core.shared.SetProcess(process.ElementAt(0));
@@ -118,15 +146,19 @@ namespace ch4pkeditorM
         }
         private void BindComboBox(ComboBox control, object list, EventHandler evt)
         {
-            Invoke((MethodInvoker)delegate
+            try
             {
-                control.SelectedIndexChanged -= evt;
-                control.DataSource = list;
-                control.DisplayMember = "Name";
-                control.ValueMember = "Order";
-                control.SelectedIndex = -1;
-                control.SelectedIndexChanged += evt;
-            });
+                Invoke((MethodInvoker)delegate
+                {
+                    control.SelectedIndexChanged -= evt;
+                    control.DataSource = list;
+                    control.DisplayMember = "Name";
+                    control.ValueMember = "Order";
+                    control.SelectedIndex = -1;
+                    control.SelectedIndexChanged += evt;
+                });
+            }
+            catch { }
         }
         public void ShowMessage(string text)
         {
@@ -137,6 +169,7 @@ namespace ch4pkeditorM
         }
 
         #region General
+
         private void bindGeneralData(General general)
         {
             Invoke((MethodInvoker)delegate
@@ -194,6 +227,31 @@ namespace ch4pkeditorM
             general.Mobile = generalMobileCheckBox.Checked;
             general.RunningFire = generalRunningFireCheckBox.Checked;
             general.Siege = generalSiegeCheckBox.Checked;
+        }
+
+        private void generalEverybodyFullBtn_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < generalListBox.Items.Count; i++)
+            {
+                generalListBox.SelectedItem = generalListBox.Items[i];
+                int order = (int)generalListBox.SelectedValue;
+                General general = Center.shared.GeneralList.Find(x => x.Order == order);
+                bindGeneralData(general);
+                generalFullBtn_Click(null, null);
+                saveGeneralData(general);
+                byte[] generalData = general.ToByte();
+                int offset = order * GeneralMemoryData.BlockDataLength;
+                bool result = Core.shared.WriteMemory((IntPtr)(GeneralMemoryData.BlockStart + offset), generalData);
+            }
+
+            string cityName = "";
+
+            if (cityListBox.SelectedItems.Count > 0)
+            {
+                cityName = ((City)cityListBox.SelectedItems[0]).Name + " 的 ";
+            }
+
+            ShowMessage(cityName + "已將所有列出的將領設定為最大值並已儲存。");
         }
 
         private void generalListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -280,6 +338,34 @@ namespace ch4pkeditorM
         #endregion
 
         #region City
+
+        bool usePresetCultureValue = false;
+
+        private void cityAllCitiesNormalFullBtn_Click(object sender, EventArgs e)
+        {
+            usePresetCultureValue = true;
+
+            for (int i = 0; i < cityListBox.Items.Count; i++)
+            {
+                cityListBox.SelectedItem = cityListBox.Items[i];
+
+                int order = (int)cityListBox.SelectedValue;
+                City city = Center.shared.CityList.Find(x => x.Order == order);
+                bindCityData(city);
+                cityNormalFullBtn_Click(null, null);
+                cityCultureFullBtn_Click(null, null);
+                cityStapleFullBtn_Click(null, null);
+                saveCityData(city);
+                byte[] cityData = city.ToByte();
+                int offset = order * CityMemoryData.BlockDataLength;
+                bool result = Core.shared.WriteMemory((IntPtr)(CityMemoryData.BlockStart + offset), cityData);
+            }
+
+            usePresetCultureValue = false;
+
+            ShowMessage("全世界之城市各數值全滿，已保存。");
+        }
+
         private void bindCityData(City city)
         {
             Invoke((MethodInvoker)delegate
@@ -408,16 +494,29 @@ namespace ch4pkeditorM
 
         private void cityCultureFullBtn_Click(object sender, EventArgs e)
         {
-            cityFarmTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityHusbandryTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityWeaponTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityTacticsTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            citySailingTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityBuildingTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityAcademicTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityArtTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityMedicalTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
-            cityCraftTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            int cultureValue = usePresetCultureValue ? Convert.ToInt32(cityDefaultCultureValue.Value) : 200;
+
+            //cityFarmTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityHusbandryTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityWeaponTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityTacticsTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //citySailingTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityBuildingTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityAcademicTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityArtTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityMedicalTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+            //cityCraftTxt.Text = CityDataValidation.Culture.MAX.ToString("d");
+
+            cityFarmTxt.Text = cultureValue.ToString();
+            cityHusbandryTxt.Text = cultureValue.ToString();
+            cityWeaponTxt.Text = cultureValue.ToString();
+            cityTacticsTxt.Text = cultureValue.ToString();
+            citySailingTxt.Text = cultureValue.ToString();
+            cityBuildingTxt.Text = cultureValue.ToString();
+            cityAcademicTxt.Text = cultureValue.ToString();
+            cityArtTxt.Text = cultureValue.ToString();
+            cityMedicalTxt.Text = cultureValue.ToString();
+            cityCraftTxt.Text = cultureValue.ToString();
         }
 
         private void cityStapleFullBtn_Click(object sender, EventArgs e)
@@ -457,6 +556,27 @@ namespace ch4pkeditorM
         #endregion
 
         #region Wife
+
+        private void wifeAllPregnant5_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < wifeListBox.Items.Count; i++)
+            {
+                wifeListBox.SelectedItem = wifeListBox.Items[i];
+                wifeHusbandNameComboBox_SelectedIndexChanged(null, null);
+                wifeBabyBoyRadioBtn.Checked = true;
+                wifePregnant5thRadioBtn.Checked = true;
+
+                int order = (int)wifeListBox.SelectedValue;
+                Wife wife = Center.shared.WifeList.Find(x => x.Order == order);
+                saveWifeData(wife);
+                byte[] wifeData = wife.ToByte();
+                int offset = order * WifeMemoryData.BlockDataLength;
+                bool result = Core.shared.WriteMemory((IntPtr)(WifeMemoryData.BlockStart + offset), wifeData);
+            }
+
+            ShowMessage("全部妻子怀孕讯息已儲存，請返回遊戲刷新查看。第五期，男。");
+        }
+
         private void bindWifeData(Wife wife)
         {
             wifeNameLabel.Text = wife.Name;
@@ -487,7 +607,7 @@ namespace ch4pkeditorM
             {
                 wife.Pregnent = WifeMemoryData.GetPregnentByte(wifeBabyGirlRadioBtn.Checked, pregnentPeriod);
             }
-            else if(wifeNotPregnantRadioBtn.Checked)
+            else if (wifeNotPregnantRadioBtn.Checked)
             {
                 wife.Pregnent = WifeMemoryData.NoPregnent;
             }
@@ -524,5 +644,6 @@ namespace ch4pkeditorM
         {
             _alive = false;
         }
+
     }
 }

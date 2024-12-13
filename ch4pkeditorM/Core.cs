@@ -88,6 +88,7 @@ namespace ch4pkeditorM
         private bool _initialized = false;
         private const Int32 _FULL_ACCESS = 0x1F0FFF;
         private List<String> _errorMessage = new List<string>();
+        public static string TextEncoding = "";
         /*
          * Variable Access
          */
@@ -129,12 +130,12 @@ namespace ch4pkeditorM
         /*
          * Methods
          */
-        public List<Process> FindProcess(string find)
-        {
-            _processName = find;
-            _processList = Process.GetProcesses().Where(x => x.ProcessName.Equals(find)).ToList();
-            return _processList;
-        }
+public List<Process> FindProcess(string find)
+{
+    _processName = find.ToUpper();
+    _processList = Process.GetProcesses().Where(x => x.ProcessName.ToUpper().Equals(_processName)).ToList();
+    return _processList;
+}
         public void SetProcess(Process p)
         {
             _process = p;

@@ -79,24 +79,28 @@ namespace ch4pkeditorM.Data
         private void setup<T>(List<T> list, int position, int length, int max)
         {
             list.Clear();
-            for (int i = 0; i < max; i++)
+            try
             {
-                int offset = i * length;
-                byte[] bs = Core.shared.readMemory((IntPtr)(position + offset), length);
-                if (bs.Count() == 0)
+                for (int i = 0; i < max; i++)
                 {
-                    continue;
-                }
-                T obj = (T)Activator.CreateInstance(typeof(T), new object[] { bs, i });
-                if (obj is ICH4PKObject)
-                {
-                    if (!((ICH4PKObject)obj).IsExist())
+                    int offset = i * length;
+                    byte[] bs = Core.shared.readMemory((IntPtr)(position + offset), length);
+                    if (bs.Count() == 0)
                     {
                         continue;
                     }
-                    list.Add(obj);
+                    T obj = (T)Activator.CreateInstance(typeof(T), new object[] { bs, i });
+                    if (obj is ICH4PKObject)
+                    {
+                        if (!((ICH4PKObject)obj).IsExist())
+                        {
+                            continue;
+                        }
+                        list.Add(obj);
+                    }
                 }
             }
+            catch { }
         }
     }
 }
