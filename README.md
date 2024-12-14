@@ -11,6 +11,9 @@ Rev 版討論區：https://github.com/resevp/ch4pkeditor_rev/discussions<br />
 Enzo 版使用編程語言 C# .NET 4.5，WinForm。<br />
 Rev 版使用編程語言 C# .NET 4.8，WinForm。<br />
 
+注意事項：
+* 使用修改器前后，都需先保存游戲資料。避免因修改器而產生游戲奔潰而損失資料。
+
 軟件訊息：
 
 原著：Enzo<br>
